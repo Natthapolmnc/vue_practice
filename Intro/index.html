@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Vue.JS - 101
+        </title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+    <div id="vue-app">
+        <h1>{{setName('Fame')}}{{getName()}}</h1>
+        <h3>Job:{{occu}}</h3>
+        <h4>Age:{{age}}</h4>
+        <h4>Website : <a v-bind:href="website">คลิ๊กลิงค์</a> </h4>
+        <input type="text" v-on:keyup="addCount">
+        <h1>Count:{{count}}</h1>
+
+        <button type="button" v-on:click="addAge" name="button">Add</button>
+        <button type="button" v-on:click="SubtractAge" name="button">Subtract</button>
+
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+    </body>
+</html> 

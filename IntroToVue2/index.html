@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <title>
+            Vue02
+        </title>
+    </head>
+    <body>
+        <div id="kaijaa-vue">
+        <bold>Name :</bold><input type="text" v-model="name">
+        <bold>Food fav:</bold><label>Pork</label><input type="checkbox" v-model="foodfav" value="pork">
+        <label>Chicken</label><input type="checkbox" v-model="foodfav" value="chicken">
+        <label>Beef</label><input type="checkbox" v-model="foodfav" value="beef">
+        <br>
+        Gender:
+        <br>
+        <label>Male</label><input v-model="gender" type="radio" value="Male">
+        <br>
+        <label>Female</label><input v-model="gender" type="radio" value="Female">
+        <br>
+        Job:
+        <select v-model="job">
+            <option disabled value="">Select your job</option>
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Janitor</option>
+        </select>
+        <hr>
+        <h1>Name: {{name}}</h1>
+        <h2>Age: {{age}}</h2>
+        <h2>Gender: {{gender}}</h2>
+        <h2>Favorite Food: {{foodfav}}</h2>
+        <h2>Jobs:{{job}}</h2>
+        <button type="button" name="button" v-on:click="addAge">Add</button>
+        <button type="button" name="button" v-on:click="subAge">Subtract</button>
+        
+        </div>
+    <script src="app.js" charset="utf-8"></script>
+    </body>
+</html>

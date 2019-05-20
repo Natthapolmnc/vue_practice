@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <title>
+            ITV2
+        </title>
+    </head>
+    <body>
+        <div id="Fame">
+            <button type="button" name="button" v-on:click="toggleLike">Fuck you</button>
+            <h1 v-if="like">Hello!</h1>
+            <h2>{{product[0]}}</h2>
+            <ul>
+                <li v-for="p in product">
+                    {{p}}
+                </li>
+            </ul>
+            <ul>
+                <li v-for="s in student">
+                    Name:{{s.name}} | Age:{{s.age}}
+                </li>
+            </ul>
+        </div>
+    <script src="app.js" charset="utf-8"></script>
+    </body>
+</html>
